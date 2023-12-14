@@ -31,7 +31,7 @@ public final class Main {
                 });
                 eventStream.startAsync();
                 long startTime = System.nanoTime();
-                while (events.get() == 0 && System.nanoTime() - startTime < 2_000_000_000L) {
+                while (events.get() == 0 && System.nanoTime() - startTime < 10_000_000_000L) {
                     Thread.sleep(100);
                 }
             }

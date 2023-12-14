@@ -7,3 +7,7 @@ targetCompatibility = 17
 application {
     mainClass = 'net.ckozak.repro.Main'
 }
+
+tasks.withType(JavaExec).configureEach { JavaExec task ->
+    task.jvmArgs '-Xlog:jfr+system+parser=info,jfr+periodic=debug'
+}

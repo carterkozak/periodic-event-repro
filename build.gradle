@@ -1,0 +1,9 @@
+apply plugin: 'java-library'
+apply plugin: 'application'
+
+sourceCompatibility = 17
+targetCompatibility = 17
+
+application {
+    mainClass = 'net.ckozak.repro.Main'
+}
